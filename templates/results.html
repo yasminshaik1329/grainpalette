@@ -1,0 +1,14 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p><strong>Predicted Rice Type:</strong> {{ rice_type }}</p>
+    <p><strong>Confidence:</strong> {{ confidence * 100 | round(2) }}%</p>
+    <img src="{{ image_path }}" alt="Uploaded Image" width="300">
+    <br><a href="/">Predict Another</a>
+</body>
+</html>
